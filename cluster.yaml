@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: nginx-cluster
+  region: ap-south-1
+
+nodeGroups:
+  - name: worker-nodes
+    instanceType: t3.medium
+    desiredCapacity: 2
